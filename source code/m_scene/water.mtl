@@ -1,0 +1,12 @@
+# Blender 3.6.18 MTL File: 'untitled.blend'
+# www.blender.org
+
+newmtl Procedural_water
+Ns 113.679626
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 106.032997
+d 0.809320
+illum 6
+map_Kd water.png
