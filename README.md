@@ -1,6 +1,6 @@
 # Interactive 3D Island Scene
 
-An OpenGL-based 3D interactive graphics application featuring a detailed island environment with dynamic elements, lighting effects, and user-controlled navigation.
+A 3D interactive scene featuring a detailed island environment with animated elements, advanced lighting, and multiple visual effects. Built with OpenGL, GLFW, and GLM.
 
 ## Overview
 
@@ -11,7 +11,7 @@ This project implements a 3D scene of an island with multiple interactive elemen
 ## Features
 
 - **Dynamic 3D Environment**: Detailed island with lighthouse, trees, fountains, and Japanese torii gates
-- **Water Simulation**: Realistic water rendering with wave animations and reflections
+- **Water Simulation**: Realistic water rendering with animations and transparency
 - **Dynamic Elements**:
   - Animated boats that realistically bob and tilt on water
   - Rotating spotlight in lighthouse 
@@ -25,7 +25,6 @@ This project implements a 3D scene of an island with multiple interactive elemen
   - Automated presentation mode with spiral camera path
 - **Visualization Modes**:
   - Solid, wireframe, and point rendering modes
-  - Shadow mapping visualization
 
 ## Dependencies
 
@@ -55,6 +54,27 @@ This project implements a 3D scene of an island with multiple interactive elemen
 - **2**: Point mode
 - **3**: Solid mode
 - **ESC**: Exit application
+
+## Technical Implementation
+
+This project demonstrates various computer graphics techniques:
+
+- **Model Loading**: Using tiny_obj_loader for OBJ/MTL files
+- **Texture Mapping**: Applying multiple textures to scene objects
+- **Shader Programming**: Custom GLSL shaders for water, lighting, and effects
+- **Camera System**: Perspective view with smooth controls
+- **Animation**: Matrix transformations and time-based calculations
+- **Lighting**: Directional and spotlight illumination models
+- **Shadow Mapping**: Depth buffer technique for shadows
+- **Skybox Rendering**: Cubemap implementation for environment
+
+## Requirements
+
+- OpenGL 4.1+
+- GLFW
+- GLM
+- C++11 or higher compiler
+- CMake for building
 
 ## Project Structure
 
@@ -110,6 +130,12 @@ make
 - Audio integration
 - Performance optimizations
 - GUI for parameter adjustments
+
+## Acknowledgments
+
+- Models and textures sourced from public 3D repositories
+- Scene composition created in Blender
+- Original project for Computer Graphics course
 
 ## Credits
 
